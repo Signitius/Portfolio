@@ -25,7 +25,10 @@ header {
     padding: 20px;
 }
 
-
+textarea::placeholder {
+    color: gray;
+    opacity: 1;
+}
 nav {
     display: flex;
     justify-content: space-between;
