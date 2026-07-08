@@ -14,7 +14,10 @@ body {
     line-height: 1.6;
     color: #333;
 }
-
+#home p {
+    max-width: 600px;
+    margin-top: 15px;
+}
 
 header {
     background: #222;
@@ -49,12 +52,12 @@ nav a:hover {
 
 
 main section {
-    padding: 60px 10%;
+    padding: 30px 10%;
 }
 
 
 #home {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,12 +226,14 @@ footer {
 .btn {
     display: inline-block;
     margin-top: 20px;
+    width: fit-content;
     padding: 12px 24px;
     background-color: #222;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+
 }
 
 .btn:hover {
@@ -258,4 +263,37 @@ footer {
     margin: 0;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #222;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.dark-mode .skill {
+    background-color: #444;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
