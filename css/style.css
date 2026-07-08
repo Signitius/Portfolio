@@ -246,3 +246,16 @@ footer {
     opacity: 0.9;
 }
 
+
+.logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
