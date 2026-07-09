@@ -12,21 +12,29 @@ html {
 body {
     font-family: "Inter", sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #1f2937;
+    background: #ffffff;
 }
 #home h2 {
     font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
-
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --dark: #111827;
+    --background: #f8fafc;
+    --card: #ffffff;
+    --text: #1f2937;
+}
 #home p {
     max-width: 600px;
     font-size: 1.1rem;
     line-height: 1.8;
 }
 header {
-    background: #222;
+    background: #111827;
     color: white;
     padding: 20px;
 }
