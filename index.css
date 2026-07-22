@@ -202,7 +202,6 @@ main section:last-of-type { border-bottom: none; }
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.02em;
-    max-width: 16ch;
     margin-bottom: 20px;
 }
 
@@ -255,7 +254,7 @@ main section:last-of-type { border-bottom: none; }
 
 /* ---- ABOUT ---- */
 #image{
-    margin-left: 10em;
+    margin-left: 100px;
 }
 #about{
     display: flex;
@@ -443,6 +442,9 @@ footer p::before { content: "// "; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
+    #image{
+        margin-left: 0;
+    }
     #about{
         flex-direction: column;
     }
