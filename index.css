@@ -255,7 +255,7 @@ main section:last-of-type { border-bottom: none; }
 
 /* ---- ABOUT ---- */
 #image{
-    margin-right: 10em;
+    margin-left: 10em;
 }
 #about{
     display: flex;
