@@ -443,6 +443,9 @@ footer p::before { content: "// "; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
+    #about{
+        flex-direction: column;
+    }
     nav {
         flex-wrap: wrap;
         row-gap: 14px;
