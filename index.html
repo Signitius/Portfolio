@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kasoigo Ignitius Denis | Portfolio</title>
+    <title>Kasoigo Ignitius Denis | Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
-
 
 <body>
 
     <header>
         <nav>
-            <div class="logo">
-                <h1>Kasoigo Ignitius Denis</h1>
-                <p>Software Developer</p>
+            <div class="brand">
+                <div>
+                    <div class="brand-row">
+                        <h1>Kasoigo Ignitius Denis</h1>
+                        <span class="branch-tag">◦ main</span>
+                    </div>
+                    <span class="brand-role">Software Developer</span>
+                </div>
             </div>
 
             <ul>
@@ -30,9 +32,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle">
-            🌙 Dark Mode
-            </button>
+            <button id="theme-toggle" aria-pressed="false">🌙 Dark mode</button>
         </nav>
     </header>
 
@@ -40,158 +40,157 @@
     <main>
 
         <section id="home">
+            <div class="wrap">
+                <p class="eyebrow">~/portfolio/home.md</p>
+                <h2>Hi, I'm Kasoigo Ignitius Denis</h2>
+                <p>
+                    Software Developer passionate about designing, building, and maintaining reliable software solutions that solve real-world problems.
+                </p>
 
-            <h2>Hi, I'm Kasoigo Ignitius Denis</h2>
-            <p>
-                Software Developer passionate about designing, building, and maintaining reliable software solutions that solve real-world problems.
-
-            </p>
-            
-            <a href="#projects" class="btn">
-                View My Projects
-            </a>
-            <div class="social-links">
-                <a href="https://github.com/Signitius" target="_blank">GitHub</a>
-                <a href="https://leetcode.com/u/Signitius/" target="_blank">LeetCode</a>
-                <a href="https://www.linkedin.com/in/ignitius-kasoigo-24b139279/" target="_blank">LinkedIn</a>
+                <a href="#projects" class="btn">view-projects</a>
+                <div class="social-links">
+                    <a href="https://github.com/Signitius" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://leetcode.com/u/Signitius/" target="_blank" rel="noopener">LeetCode</a>
+                    <a href="https://www.linkedin.com/in/ignitius-kasoigo-24b139279/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
             </div>
         </section>
 
 
         <section id="about">
-            <h2>About Me</h2>
+            <div class="wrap">
+                <p class="eyebrow">about.md</p>
+                <h2 class="section-title">About Me</h2>
 
-            <p>
-    
-                I'm passionate about creating software that is both functional and
-                user-friendly. I enjoy tackling challenging problems, learning new
-                technologies, and turning ideas into practical solutions.
-            </p>
+                <p>
+                    I'm passionate about creating software that is both <strong>functional</strong> and
+                    <strong>user-friendly</strong>. I enjoy tackling challenging problems, learning new
+                    technologies, and turning ideas into practical solutions.
+                </p>
 
-            <p>
-                My experience includes building applications with Python and
-                developing responsive web interfaces using HTML, CSS, and
-                JavaScript. I'm continually improving my skills and enjoy working
-                on projects that help me grow as a developer.
-            </p>
+                <p>
+                    My experience includes building applications with Python and
+                    developing responsive web interfaces using HTML, CSS, and
+                    JavaScript. I'm continually improving my skills and enjoy working
+                    on projects that help me grow as a developer.
+                </p>
+            </div>
         </section>
 
         <section id="skills">
+            <div class="wrap">
+                <p class="eyebrow">skills.json</p>
+                <h2 class="section-title">Skills</h2>
 
-            <h2>Skills</h2>
-
-            <div class="skills-container">
-                <span class="skill">Python</span>
-                <span class="skill">HTML5</span>
-                <span class="skill">CSS3</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">Git</span>
-                <span class="skill">GitHub</span>
-                <span class="skill">JSON</span>
+                <div class="skills-container">
+                    <span class="skill">Python</span>
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Git</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">JSON</span>
+                </div>
             </div>
-
         </section>
 
         <section id="projects">
+            <div class="wrap">
+                <p class="eyebrow">projects/</p>
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-container">
 
-            <h2>My Projects</h2>
-            <div class="projects-container">
+                    <div class="project-card">
+                        <div class="commit-meta">
+                            <span class="commit-hash">#a3f9c1e</span>
+                            <span class="commit-status">active</span>
+                        </div>
+                        <h3>Inventory Management Console App</h3>
+                        <p class="desc">
+                            A Python console application that manages products,
+                            stock levels, and data storage using JSON.
+                        </p>
+                        <div class="tech-row">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                        <a class="view-link" href="https://github.com/Signitius/Inventory-Management-Console-App" target="_blank" rel="noopener">View project</a>
+                    </div>
 
-                <div class="project-card">
+                    <div class="project-card">
+                        <div class="commit-meta">
+                            <span class="commit-hash">#7d21bfa</span>
+                            <span class="commit-status">active</span>
+                        </div>
+                        <h3>TO DO App</h3>
+                        <p class="desc">
+                            A full-stack web application that allows users to create, manage, and track their tasks.
+                        </p>
+                        <div class="tech-row">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <a class="view-link" href="#">View project</a>
+                    </div>
 
-                    <h3>Inventory Management Console App</h3>
-
-                    <p>
-                        A Python  console application that manages products,
-                        stock levels, and data storage using JSON.
-                    </p>
-
-                    <p>
-                        Technologies: Python, JSON
-                    </p>
-
-                    <a href="https://github.com/Signitius/Inventory-Management-Console-App">
-                        View Project
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <h3>TO DOApp</h3>
-
-                    <p>
-                        A full-stack web application that allows users to create, manage, and track their tasks.
-                    </p>
-
-                    <p>
-                        Technologies: React, Node.js,express
-                    </p>
-
-                    <a href="#">
-                        View Project
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <h3>Portfolio Website</h3>
-
-                    <p>
-                        A responsive personal portfolio website
-                        showcasing my skills and projects.
-                    </p>
-
-                    <p>
-                        Technologies: HTML, CSS, JavaScript
-                    </p>
-
-                    <a href="https://signitius.github.io/Portfolio/">
-                        View Project
-                    </a>
+                    <div class="project-card">
+                        <div class="commit-meta">
+                            <span class="commit-hash">#c68e02b</span>
+                            <span class="commit-status archived">archived</span>
+                        </div>
+                        <h3>Portfolio Website</h3>
+                        <p class="desc">
+                            A responsive personal portfolio website
+                            showcasing my skills and projects.
+                        </p>
+                        <div class="tech-row">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a class="view-link" href="https://signitius.github.io/Portfolio/" target="_blank" rel="noopener">View project</a>
+                    </div>
 
                 </div>
-
-</div>
-            
+            </div>
         </section>
 
 
         <section id="contact">
+            <div class="wrap">
+                <p class="eyebrow">contact.sh</p>
+                <h2 class="section-title">Contact Me</h2>
 
-            <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/mojozydo" method="POST">
+                    <label for="name">name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
 
-            <form action="https://formspree.io/f/mojozydo" method="POST">
+                    <label for="email">email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
 
-                <input 
-                    type="text" 
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                >
+                    <label for="message">message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Say hello..."
+                        required></textarea>
 
-                <input 
-                    type="email" 
-                    name="email"
-                    placeholder="Your Email"
-                    required
-                >
-
-                <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    required>
-                </textarea>
-
-                <button type="submit">
-                    Send
-                </button>
-
-            </form>
-
+                    <button type="submit">send</button>
+                </form>
+            </div>
         </section>
 
 
@@ -199,15 +198,12 @@
 
 
     <footer>
-
-        <p>
-            © 2026 Kasoigo Ignitius Denis.
-        </p>
-
+        <p>© 2026 Kasoigo Ignitius Denis. Built with intent.</p>
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="index.js"></script>
+    
 
 </body>
 
