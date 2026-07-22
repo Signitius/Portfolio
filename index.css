@@ -263,7 +263,25 @@ main section:last-of-type { border-bottom: none; }
 #about .wrap p:last-child { margin-bottom: 0; }
 #about .wrap p strong { color: var(--ink); font-weight: 600; }
 
-/* ---- SKILLS ---- */
+/* ---- SKILLS (grouped, JSON-key styled) ---- */
+.skills-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.skill-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+.skill-group-label {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--accent);
+    margin-bottom: 12px;
+}
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
