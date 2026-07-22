@@ -254,6 +254,14 @@ main section:last-of-type { border-bottom: none; }
 .social-links a::before { content: "↗ "; }
 
 /* ---- ABOUT ---- */
+#image{
+    margin-right: 10em;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 #about .wrap p {
     max-width: 64ch;
     color: var(--muted);
@@ -452,3 +460,8 @@ footer p::before { content: "// "; }
     #home { padding-top: 64px; padding-bottom: 56px; }
     .project-card:hover { transform: none; }
 }
+
+
+
+
+
